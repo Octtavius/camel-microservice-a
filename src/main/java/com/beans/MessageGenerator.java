@@ -12,8 +12,8 @@ public class MessageGenerator {
 
     public String getMessage() {
 
-        int tmp = 3;
-//        int tmp = random.nextInt(3) + 1;
+//        int tmp = 3;
+        int tmp = random.nextInt(3) + 1;
         return "My message for Active MQ "+ " " + System.currentTimeMillis() + " " + tmp;
     }
 }
