@@ -8,10 +8,12 @@ import java.util.Random;
 
 @Component
 public class MessageGenerator {
-    Random random = new java.util.Random();
+    private Random random = new java.util.Random();
 
     public String getMessage() {
-        int tmp = random.nextInt(3) + 1;
-        return "My message for Active MQ " + tmp;
+
+        int tmp = 3;
+//        int tmp = random.nextInt(3) + 1;
+        return "My message for Active MQ "+ " " + System.currentTimeMillis() + " " + tmp;
     }
 }

@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class ProcessorGenerateException implements Processor {
     @Override
     public void process(Exchange exchange) throws Exception {
-        throw new Exception("Boom! Something happened");
+        throw new Exception("Boom! Something happened at " + System.currentTimeMillis());
     }
 }
